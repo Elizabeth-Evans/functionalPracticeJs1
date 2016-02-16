@@ -1,0 +1,206 @@
+/**
+ * Part I: use any of the looping methods discussed in class
+ *
+ * 1. for loop,
+ * 2. Array.forEach,
+ * 3. custom forEach
+ *
+ * to complete the following problems
+ */
+
+// 0. write your own forEach() that takes two arguments: an array, and a callback
+
+function forEach(array, callback){
+    // YOUR CODE HERE
+
+}
+
+// testing your code with console.assert
+var total = 1;
+forEach([1, 2, 3, 4], function(a){ total *= a; });
+// and finally assert; if this fails, the program stops
+console.assert(total === 24);
+
+
+// 1. calculate the sum of numbers (returns the sum (A NUMBER))
+
+function sum(){
+  }
+
+    // parse arguments into an array
+    var args = [].slice.call(arguments);
+
+    // .. do something with each element of args
+    // YOUR CODE HERE
+}
+
+var sumFunc =function (){
+  var sum = 0;
+  var args = Array.prototype.slice.call(arguments);
+  for(var i = 0; i < args.length; i ++){
+  sum += args[i];
+  }
+  console.log(sum);
+  return sum;
+}
+console.assert( sum(1, 2, 3, 4, 5) === 15 )
+
+// 2. calculate the average of numbers (returns the average (A NUMBER))
+
+function average(){
+    // parse arguments into an array
+    var args = [].slice.call(arguments);
+
+    // .. do something with each element of args
+    // YOUR CODE HERE
+}
+
+
+
+
+
+var avgFunc =function (){
+  var sum = 0;
+  var args = Array.prototype.slice.call(arguments);
+  for(var i = 0; i < args.length; i ++){
+  sum += args[i];
+  }
+  var avg = (sum/args.length);
+  console.log(avg);
+  return avg;
+};
+console.assert( avgFunc(2, 4, 6, 8) === 5 );
+
+
+// 3. find the largest number of the inputs (returns the largest input (A NUMBER))
+
+function largest(){
+    // parse arguments into an array
+    var args = [].slice.call(arguments);
+
+    // .. do something with each element of args
+    // YOUR CODE HERE
+}
+function largest() {
+  var args = Array.prototype.slice.call(arguments);
+  for (var i = 0; i < args.length; i++) {
+    var math = math.max(args[i]);
+  }
+  console.log(math.max(args[i]));
+}
+
+
+
+console.assert( largest(2, 4, 6, 8) === 8 )
+
+// 4. find the longest string of the inputs (returns the longest input (A STRING))
+
+function longest(){
+    // parse arguments into an array
+    var args = [].slice.call(arguments);
+
+    // .. do something with each element of args
+    // YOUR CODE HERE
+}
+
+function longest(){
+  var args = Array.prototype.slice.call(arguments);
+  for(var i = 0; i < args.length; i ++){
+  args[i].length;
+  }
+  return args[i].longest;
+}
+
+ console.assert( longest("this", "is", "a", "awesome", "function") === "function" );
+
+/**
+ * PART II
+ *
+ * For each of the following Array methods,
+ *
+ * 1. use them in an example
+ * 2. write a console.assert to test them
+ */
+
+ var fruit = ['cherries', 'apples', 'bananas'];
+ fruit.sort(); // ['apples', 'bananas', 'cherries']
+
+// .sort()
+var names = ["pam", "gertrude", "horace", "don"];
+console.log(names.sort());
+console.assert(names () === "don", "gertrude", "horace", "pam");
+
+// .concat()
+var fruit = ["apple", "orange"];
+var veg = ["beet", "kale"];
+var salad = fruit.concat(veg);
+console.log(salad);
+console.assert(["apple", "orange", "beet", "kale"]);
+
+// .indexOf()
+var salad = ["apple", "orange", "beet", "kale"]
+console.log(salad.indexOf(1));
+console.assert("orange");
+
+// .split()
+var sentence = "I like to eat fries"
+var sentenceSpl = sentence.split("e");
+console.log(sentenceSpl);
+console.assert(["I lik", " to ", "at fri", "s"]);
+
+// .join()
+var colors = ["yellow", "pink", "green"];
+var colorsJo = colors.join();
+console.log(colorsJo);
+console.assert(yellow,pink,green);
+
+// .pop()
+var colors = ["yellow", "pink", "green"];
+console.log(colors.pop(2));
+console.assert(green);
+
+// .push()
+var colors = ["yellow", "pink", "green"];
+colors.push("red");
+console.log(colors);
+console.assert(["yellow", "pink", "green", "red"]);
+
+// .slice()
+var colors = ["yellow", "pink", "green", "red", "purple"];
+var colorsSpl = colors.slice(1, 4);
+console.log(colorsSpl);
+console.assert(["pink", "green", "red"]);
+
+// .splice()
+var colors = ["yellow", "pink", "green", "red", "purple"];
+colors.splice(1, 0, "monday", "tuesday", "wednesday");
+console.log(colors);
+console.assert(["yellow", "monday", "tuesday", "wednesday", "pink", "green", "red", "purple"]);
+
+// .shift()
+var colors = ["yellow", "pink", "green", "red", "purple"];
+colors.shift();
+console.assert("yellow");
+
+// .unshift()
+var colors = ["yellow", "pink", "green", "red", "purple"];
+colors.unshift("blue");
+console.log(colors);
+console.assert(["blue", "yellow", "pink", "green", "red", "purple"]);
+
+// .filter()
+
+function bigNumbers(numbers) {
+    var numbers = [5, 13, 30, 2];
+    return numbers > 12;
+}
+console.assert()
+
+// .map()
+var numbers = [1, 2, 3, 4, 5];
+
+function myFunction() {
+    x = document.getElementById("demo")
+    x.innerHTML = numbers.map(Math.sqrt);
+}
+console.assert
